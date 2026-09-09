@@ -283,7 +283,6 @@ layout: two-cols
 
 </div>
 
-
 ---
 layout: default
 ---
@@ -292,41 +291,11 @@ layout: default
 
 # 6 уровней агентной архитектуры
 
-<div class="grid grid-cols-2 gap-3 pt-3">
-
-<v-click>
-<div class="p-2 rounded" style="background: #1E293B;">
-  <h3 style="font-size: 1rem;">1. Жёсткое управление</h3>
-  <p class="small">Manager → Tools. Один агент вызывает специалистов как инструменты.</p>
-  <p class="xs"><span class="green">✅ Связная работа</span> &nbsp; <span class="red">❌ Бутылочное горлышко</span></p>
+<div class="media-box tall" style="padding-top: 4px;">
+  <img src="/architecture-layers.png" alt="6 уровней агентной архитектуры">
 </div>
-</v-click>
 
-<v-click>
-<div class="p-2 rounded" style="background: #1E293B;">
-  <h3 style="font-size: 1rem;">2. Локальная автономия</h3>
-  <p class="small">Чат агентов. Равноправные, передают управление.</p>
-  <p class="xs"><span class="green">✅ Разбор в диалоге</span> &nbsp; <span class="red">❌ Нет единого источника истины</span></p>
-</div>
-</v-click>
-
-<v-click>
-<div class="p-2 rounded" style="background: #1E293B;">
-  <h3 style="font-size: 1rem;">3. Явное состояние</h3>
-  <p class="small">Граф состояний. Plan → Act → Verify, с сохраняемым состоянием.</p>
-  <p class="xs"><span class="green">✅ Один сложный запуск</span> &nbsp; <span class="red">❌ Граф ≠ общий бэклог</span></p>
-</div>
-</v-click>
-
-<v-click>
-<div class="p-2 rounded" style="background: #1E293B;">
-  <h3 style="font-size: 1rem;">4. Масштаб парка <span class="badge-green" style="font-size: 0.6rem;">production</span></h3>
-  <p class="small">Реестр задач. Исполнители берут и возвращают доказательства.</p>
-  <p class="xs"><span class="green">✅ Множество асинхронных работ</span> &nbsp; <span class="red">❌ Сложность эксплуатации</span></p>
-</div>
-</v-click>
-
-</div
+<div class="pt-1 text-xs opacity-40 text-center">Фреймворк решает задачи одного уровня — и не помогает на следующем. Выбирайте под уровень.</div>
 
 ---
 layout: default
@@ -335,6 +304,10 @@ layout: default
 <div class="page-num">8</div>
 
 # Как встроить ИИ в процесс
+
+<div class="pt-2">
+
+## <span class="amber">Три столпа</span> (по Automatica)
 
 <div class="grid grid-cols-3 gap-3 pt-3">
 
@@ -479,7 +452,21 @@ layout: default
 
 <div class="page-num">11</div>
 
+# Победы vs Провалы
+
+<div class="media-box wide" style="padding-top: 2px;">
+  <img src="/wins-vs-fails.png" alt="AI wins vs fails comparison">
+</div>
+
+---
+layout: default
+---
+
+<div class="page-num">12</div>
+
 # Провалы: таксономия MAST
+
+<div class="xs opacity-40 pt-1">Исследование: 5 систем · 150+ задач · 14 видов сбоев</div>
 
 <div class="grid grid-cols-3 gap-3 pt-2">
 
@@ -532,7 +519,21 @@ layout: default
 layout: default
 ---
 
-<div class="page-num">12</div>
+<div class="page-num">13</div>
+
+# Цикл агента
+
+<div class="media-box tall" style="padding-top: 4px;">
+  <img src="/agent-loop.png" alt="Agent Loop: Observe → Reason → Act → Verify">
+</div>
+
+<div class="pt-2 text-center small opacity-50">Каждый цикл: наблюдает среду → рассуждает → действует через инструменты → проверяет результат</div>
+
+---
+layout: default
+---
+
+<div class="page-num">14</div>
 
 # Главные принципы
 
@@ -586,7 +587,7 @@ layout: default
 layout: default
 ---
 
-<div class="page-num">13</div>
+<div class="page-num">15</div>
 
 # Что дальше? Прогноз на год
 
@@ -628,7 +629,7 @@ layout: center
 class: text-center
 ---
 
-<div class="page-num">14</div>
+<div class="page-num">16</div>
 
 # Итоги
 
@@ -664,10 +665,10 @@ class: text-center
 layout: end
 ---
 
-<div class="page-num">19</div>
+<div class="page-num">17</div>
 
 <div class="text-center">
   <div style="font-size: 1.5rem; font-weight: 700; color: #F59E0B;">Спасибо!</div>
   <div class="pt-4 text-sm opacity-50">ДК РАЗУМ · ИТ митап · 2026</div>
-  <div class="pt-8 text-xs opacity-30">Слайды на Slidev — править можно прямо во время показа через бота<br>github.com/namre/ai-in-work-mitap</div>
+  <div class="pt-8 text-xs opacity-30">Слайды на Slidev — править можно прямо во время показа через бота.<br>github.com/namre/ai-in-work-mitap</div>
 </div>
