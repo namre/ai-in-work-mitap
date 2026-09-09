@@ -88,13 +88,13 @@ layout: cover
 
 # ИИ в работе
 
-## Год прогресса, личный опыт и как не наступить на грабли
+## Прогресс LLM, личный опыт и как не наступить на грабли
 
 <div class="pt-8">
   <span class="badge-amber">Внутренний митап департамента ИТ</span>
 </div>
 
-<div class="pt-4 text-sm opacity-40">ДК РАЗУМ · 2026</div>
+<div class="pt-4 text-sm opacity-40">Евгений Эрман, ДК РАЗУМ · 2026</div>
 <div class="page-num">1</div>
 
 ---
@@ -103,7 +103,7 @@ layout: default
 
 <div class="page-num">2</div>
 
-# Прогресс за год: тогда и сейчас
+# Прогресс: тогда и сейчас
 
 <div class="media-box tall" style="padding-top: 4px;">
   <video src="/CMAF_480.mp4" controls></video>
@@ -142,13 +142,6 @@ layout: default
 </div>
 </v-click>
 
-<v-click>
-<div class="p-2 rounded" style="background: #1E293B;">
-  <h3 style="font-size: 1.05rem;">OpenAI Symphony</h3>
-  <p class="small opacity-70"><span class="amber">+500% PR</span> в некоторых командах за 3 недели. Оркестратор агентов через трекер задач.</p>
-</div>
-</v-click>
-
 </div>
 
 <div class="pt-4 text-center text-sm opacity-40">
@@ -156,49 +149,10 @@ layout: default
 </div>
 
 ---
-layout: default
----
-
-<div class="page-num">4</div>
-
-# Исследования: что говорят цифры
-
-<div class="grid grid-cols-2 gap-4 pt-2">
-
-<div>
-  <div class="badge-green mb-1">Параллельные задачи</div>
-  <div class="green" style="font-size: 1.7rem; font-weight: 700;">+80.9%</div>
-  <div class="small opacity-50 mb-3">против одного агента — Google Research, 180 конфигураций</div>
-
-  <div class="badge-red mb-1">Последовательное планирование</div>
-  <div class="red" style="font-size: 1.7rem; font-weight: 700;">−39…−70%</div>
-  <div class="small opacity-50 mb-3">PlanCraft: агенты проигрывают одиночке на зависимых шагах</div>
-</div>
-
-<div>
-  <div class="badge-red mb-1">Рост ошибок</div>
-  <div class="red" style="font-size: 1.7rem; font-weight: 700;">до 17.2×</div>
-  <div class="small opacity-50 mb-2">У независимых агентов</div>
-  <div class="green" style="font-size: 1.2rem; font-weight: 600;">→ 4.4×</div>
-  <div class="small opacity-50 mb-3">С централизованной оркестрацией</div>
-
-  <div class="badge-amber mt-1">Расход токенов: 15× против чата</div>
-  <div class="small opacity-50">но прирост результата +90.2% (Anthropic)</div>
-</div>
-
-</div>
-
-<div class="pt-3 text-center amber" style="font-size: 1.1rem; font-weight: 600;">
-  Больше агентов ≠ лучше. Смысл есть, только если работу можно разделить.
-</div>
-
-<div class="pt-1 text-xs opacity-30 text-center">Источники: Google Research (2026), Anthropic (2025). Разные исследования — не единый бенчмарк.</div>
-
----
 layout: two-cols
 ---
 
-<div class="page-num">5</div>
+<div class="page-num">4</div>
 
 # Как ИИ меняет работу
 
@@ -242,7 +196,7 @@ layout: two-cols
 layout: default
 ---
 
-<div class="page-num">6</div>
+<div class="page-num">5</div>
 
 # MCP: почему их стало так много
 
@@ -266,7 +220,7 @@ layout: default
 
 <v-click>
 <div class="p-3 rounded-lg" style="background: #0F2B1A;">
-  <h2 style="font-size: 1.15rem;" class="green mb-2">У нас в РАЗУМ уже подключено:</h2>
+  <h2 style="font-size: 1.15rem;" class="green mb-2">У нас в РАЗУМ уже подключено к ИИ-помощнику:</h2>
   <div class="grid grid-cols-3 gap-1 small">
     <span>Яндекс.Почта</span><span>Яндекс.Календарь</span><span>Яндекс.Диск</span>
     <span>Яндекс.Вики</span><span>Яндекс.Телемост</span><span>Kaiten</span>
@@ -282,7 +236,7 @@ layout: default
 layout: two-cols
 ---
 
-<div class="page-num">7</div>
+<div class="page-num">6</div>
 
 # Чат-боты vs Агенты
 
@@ -329,13 +283,14 @@ layout: two-cols
 
 </div>
 
+
 ---
 layout: default
 ---
 
-<div class="page-num">8</div>
+<div class="page-num">7</div>
 
-# 4 топологии управления агентами
+# 6 уровней агентной архитектуры
 
 <div class="grid grid-cols-2 gap-3 pt-3">
 
@@ -371,35 +326,15 @@ layout: default
 </div>
 </v-click>
 
-</div>
-
-<div class="pt-3 text-center xs opacity-40">Источник: Automatica · «Операционные системы для 1,000 ИИ-агентов»</div>
+</div
 
 ---
 layout: default
 ---
 
-<div class="page-num">9</div>
-
-# 6 уровней агентной архитектуры
-
-<div class="media-box tall" style="padding-top: 4px;">
-  <img src="/architecture-layers.png" alt="6 уровней агентной архитектуры">
-</div>
-
-<div class="pt-1 text-xs opacity-40 text-center">Фреймворк решает задачи одного уровня — и не помогает на следующем. Выбирайте под уровень.</div>
-
----
-layout: default
----
-
-<div class="page-num">10</div>
+<div class="page-num">8</div>
 
 # Как встроить ИИ в процесс
-
-<div class="pt-2">
-
-## <span class="amber">Три столпа</span> (по Automatica)
 
 <div class="grid grid-cols-3 gap-3 pt-3">
 
@@ -442,7 +377,7 @@ layout: default
 layout: default
 ---
 
-<div class="page-num">11</div>
+<div class="page-num">9</div>
 
 # Контракт задачи
 
@@ -499,7 +434,7 @@ layout: default
 layout: default
 ---
 
-<div class="page-num">12</div>
+<div class="page-num">10</div>
 
 # За чем следить: ИИ ошибается — и дорого
 
@@ -542,23 +477,9 @@ layout: default
 layout: default
 ---
 
-<div class="page-num">13</div>
-
-# Победы vs Провалы
-
-<div class="media-box wide" style="padding-top: 2px;">
-  <img src="/wins-vs-fails.png" alt="AI wins vs fails comparison">
-</div>
-
----
-layout: default
----
-
-<div class="page-num">14</div>
+<div class="page-num">11</div>
 
 # Провалы: таксономия MAST
-
-<div class="xs opacity-40 pt-1">Исследование: 5 систем · 150+ задач · 14 видов сбоев</div>
 
 <div class="grid grid-cols-3 gap-3 pt-2">
 
@@ -611,21 +532,7 @@ layout: default
 layout: default
 ---
 
-<div class="page-num">15</div>
-
-# Цикл агента
-
-<div class="media-box tall" style="padding-top: 4px;">
-  <img src="/agent-loop.png" alt="Agent Loop: Observe → Reason → Act → Verify">
-</div>
-
-<div class="pt-2 text-center small opacity-50">Каждый цикл: наблюдает среду → рассуждает → действует через инструменты → проверяет результат</div>
-
----
-layout: default
----
-
-<div class="page-num">16</div>
+<div class="page-num">12</div>
 
 # Главные принципы
 
@@ -679,7 +586,7 @@ layout: default
 layout: default
 ---
 
-<div class="page-num">17</div>
+<div class="page-num">13</div>
 
 # Что дальше? Прогноз на год
 
@@ -721,7 +628,7 @@ layout: center
 class: text-center
 ---
 
-<div class="page-num">18</div>
+<div class="page-num">14</div>
 
 # Итоги
 
@@ -762,5 +669,5 @@ layout: end
 <div class="text-center">
   <div style="font-size: 1.5rem; font-weight: 700; color: #F59E0B;">Спасибо!</div>
   <div class="pt-4 text-sm opacity-50">ДК РАЗУМ · ИТ митап · 2026</div>
-  <div class="pt-8 text-xs opacity-30">Слайды на Slidev — править можно прямо во время показа через бота.<br>github.com/namre/ai-in-work-mitap</div>
+  <div class="pt-8 text-xs opacity-30">Слайды на Slidev — править можно прямо во время показа через бота<br>github.com/namre/ai-in-work-mitap</div>
 </div>
