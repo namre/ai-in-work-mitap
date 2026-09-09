@@ -443,9 +443,9 @@ layout: default
 
 # За чем следить: ИИ ошибается — и дорого
 
-<div class="media-box short" style="gap: 12px;">
-  <img src="/photo_2026-09-08_19-55-20.jpg" alt="Пример ошибки ИИ 1" style="border-radius: 8px;">
-  <img src="/photo_2026-09-08_19-55-20_1.jpg" alt="Пример ошибки ИИ 2" style="border-radius: 8px;">
+<div class="media-box" style="gap: 16px;">
+  <img src="/photo_2026-09-08_19-55-20.jpg" alt="Пример ошибки ИИ 1" style="border-radius: 8px; max-height: 220px; max-width: 46%; width: auto;">
+  <img src="/photo_2026-09-08_19-55-20_1.jpg" alt="Пример ошибки ИИ 2" style="border-radius: 8px; max-height: 220px; max-width: 46%; width: auto;">
 </div>
 
 <div class="grid grid-cols-2 gap-2 pt-2">
@@ -478,23 +478,10 @@ layout: default
 
 <div class="pt-1 text-center"><span class="amber" style="font-weight: 600;">Модели ошибаются. Архитектура — то, что держит систему.</span></div>
 
----
 layout: default
 ---
 
 <div class="page-num">11</div>
-
-# Победы vs Провалы
-
-<div class="media-box wide" style="padding-top: 2px;">
-  <img src="/wins-vs-fails.png" alt="AI wins vs fails comparison">
-</div>
-
----
-layout: default
----
-
-<div class="page-num">12</div>
 
 # Провалы: таксономия MAST
 
@@ -548,24 +535,8 @@ layout: default
 </v-click>
 
 ---
-layout: default
----
 
-<div class="page-num">13</div>
-
-# Цикл агента
-
-<div class="media-box tall" style="padding-top: 4px;">
-  <img src="/agent-loop.png" alt="Agent Loop: Observe → Reason → Act → Verify">
-</div>
-
-<div class="pt-2 text-center small opacity-50">Каждый цикл: наблюдает среду → рассуждает → действует через инструменты → проверяет результат</div>
-
----
-layout: default
----
-
-<div class="page-num">14</div>
+<div class="page-num">12</div>
 
 # Главные принципы
 
@@ -619,7 +590,7 @@ layout: default
 layout: default
 ---
 
-<div class="page-num">15</div>
+<div class="page-num">13</div>
 
 # Что дальше? Прогноз на год
 
@@ -661,7 +632,7 @@ layout: center
 class: text-center
 ---
 
-<div class="page-num">16</div>
+<div class="page-num">14</div>
 
 # Итоги
 
@@ -697,7 +668,7 @@ class: text-center
 layout: end
 ---
 
-<div class="page-num">17</div>
+<div class="page-num">15</div>
 
 <div class="text-center">
   <div style="font-size: 1.5rem; font-weight: 700; color: #F59E0B;">Спасибо!</div>
