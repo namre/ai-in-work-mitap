@@ -33,23 +33,23 @@ routerMode: hash
 .slidev-layout h1 {
   color: #F0F6FF;
   font-weight: 700;
-  font-size: 2.2rem;
+  font-size: 2rem;
   line-height: 1.2;
+  margin-bottom: 0.3rem;
 }
 .slidev-layout h2 {
   color: #F59E0B;
   font-weight: 600;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   line-height: 1.3;
 }
 .slidev-layout p, .slidev-layout li {
   color: #CBD5E1;
-  font-size: 1rem;
-  line-height: 1.5;
+  font-size: 0.95rem;
+  line-height: 1.45;
 }
 .slidev-layout li strong { color: #F0F6FF; }
 .slidev-layout code { background: #1E293B; color: #7DD3FC; font-size: 0.85em; }
-.slidev-layout img { border-radius: 8px; max-height: 420px; }
 .green { color: #34D399; }
 .red { color: #F87171; }
 .amber { color: #FBBF24; }
@@ -60,7 +60,10 @@ routerMode: hash
 .badge-green { background: #065F46; color: #6EE7B7; padding: 2px 10px; border-radius: 6px; font-size: 0.8rem; }
 .badge-red { background: #7F1D1D; color: #FCA5A5; padding: 2px 10px; border-radius: 6px; font-size: 0.8rem; }
 .badge-amber { background: #78350F; color: #FCD34D; padding: 2px 10px; border-radius: 6px; font-size: 0.8rem; }
-.page-num { position: absolute; bottom: 12px; right: 24px; font-size: 0.75rem; color: #475569; }
+.page-num { position: absolute; bottom: 10px; right: 20px; font-size: 0.7rem; color: #475569; }
+/* Image/video containers */
+.media-box { display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.media-box img, .media-box video { max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 8px; }
 </style>
 
 ---
@@ -71,7 +74,7 @@ layout: cover
 
 ## Год прогресса, личный опыт и как не наступить на грабли
 
-<div class="pt-10">
+<div class="pt-8">
   <span class="badge-amber">Внутренний митап департамента ИТ</span>
 </div>
 
@@ -82,11 +85,15 @@ layout: cover
 layout: default
 ---
 
-<div style="text-align:center; padding-top: 8px;">
+<div class="page-num">2</div>
+
+# Прогресс за год: тогда и сейчас
+
+<div class="media-box" style="height: 62vh; padding-top: 4px;">
   <video src="/CMAF_480.mp4" controls></video>
 </div>
 
-<div class="text-center pt-1"><span class="amber" style="font-size: 1.1rem; font-weight: 600;">От «не могу» к «сделал, проверяй» — за 12 месяцев.</span></div>
+<div class="text-center pt-1"><span class="amber" style="font-size: 1rem; font-weight: 600;">От «не могу» к «сделал, проверяй» — за 12 месяцев.</span></div>
 
 ---
 layout: default
@@ -96,75 +103,114 @@ layout: default
 
 # Что случилось за год: ключевые вехи
 
-<div class="grid grid-cols-2 gap-5 pt-4">
+<div class="grid grid-cols-2 gap-3 pt-2">
 
 <v-click>
-<div class="p-3 rounded" style="background: #1E293B;">
-  <h3 style="font-size: 1.1rem;">Модели научились «думать»</h3>
+<div class="p-2 rounded" style="background: #1E293B;">
+  <h3 style="font-size: 1.05rem;">Модели научились «думать»</h3>
   <p class="small opacity-70">Claude 4, GPT-5, DeepSeek R1/R2 — reasoning из коробки. Gemini 2.5 Pro — контекст в 1 млн токенов.</p>
 </div>
 </v-click>
 
 <v-click>
-<div class="p-3 rounded" style="background: #1E293B;">
-  <h3 style="font-size: 1.1rem;">Агенты в продакшене</h3>
+<div class="p-2 rounded" style="background: #1E293B;">
+  <h3 style="font-size: 1.05rem;">Агенты в продакшене</h3>
   <p class="small opacity-70">Codex CLI, Claude Code, Grok Bot — работают с файлами и Git в терминале.</p>
 </div>
 </v-click>
 
 <v-click>
-<div class="p-3 rounded" style="background: #1E293B;">
-  <h3 style="font-size: 1.1rem;">MCP стал стандартом</h3>
+<div class="p-2 rounded" style="background: #1E293B;">
+  <h3 style="font-size: 1.05rem;">MCP стал стандартом</h3>
   <p class="small opacity-70">Любой продукт → MCP-сервер → доступен любому агенту. USB для ИИ.</p>
 </div>
 </v-click>
 
 <v-click>
-<div class="p-3 rounded" style="background: #1E293B;">
-  <h3 style="font-size: 1.1rem;">OpenAI Symphony</h3>
+<div class="p-2 rounded" style="background: #1E293B;">
+  <h3 style="font-size: 1.05rem;">OpenAI Symphony</h3>
   <p class="small opacity-70"><span class="amber">+500% PR</span> в некоторых командах за 3 недели. Оркестратор агентов через трекер задач.</p>
 </div>
 </v-click>
 
 </div>
 
-<div class="pt-5 text-center text-sm opacity-40">
+<div class="pt-4 text-center text-sm opacity-40">
   Главный итог: задачи, которые год назад требовали человека, сегодня решаются автономно.
 </div>
+
+---
+layout: default
+---
+
+<div class="page-num">4</div>
+
+# Исследования: что говорят цифры
+
+<div class="grid grid-cols-2 gap-4 pt-2">
+
+<div>
+  <div class="badge-green mb-1">Параллельные задачи</div>
+  <div class="green" style="font-size: 1.7rem; font-weight: 700;">+80.9%</div>
+  <div class="small opacity-50 mb-3">против одного агента — Google Research, 180 конфигураций</div>
+
+  <div class="badge-red mb-1">Последовательное планирование</div>
+  <div class="red" style="font-size: 1.7rem; font-weight: 700;">−39…−70%</div>
+  <div class="small opacity-50 mb-3">PlanCraft: агенты проигрывают одиночке на зависимых шагах</div>
+</div>
+
+<div>
+  <div class="badge-red mb-1">Рост ошибок</div>
+  <div class="red" style="font-size: 1.7rem; font-weight: 700;">до 17.2×</div>
+  <div class="small opacity-50 mb-2">У независимых агентов</div>
+  <div class="green" style="font-size: 1.2rem; font-weight: 600;">→ 4.4×</div>
+  <div class="small opacity-50 mb-3">С централизованной оркестрацией</div>
+
+  <div class="badge-amber mt-1">Расход токенов: 15× против чата</div>
+  <div class="small opacity-50">но прирост результата +90.2% (Anthropic)</div>
+</div>
+
+</div>
+
+<div class="pt-3 text-center amber" style="font-size: 1.1rem; font-weight: 600;">
+  Больше агентов ≠ лучше. Смысл есть, только если работу можно разделить.
+</div>
+
+<div class="pt-1 text-xs opacity-30 text-center">Источники: Google Research (2026), Anthropic (2025). Разные исследования — не единый бенчмарк.</div>
 
 ---
 layout: two-cols
 ---
 
-<div class="page-num">4</div>
+<div class="page-num">5</div>
 
 # Как ИИ меняет работу
 
 <v-click>
-<div class="mb-4">
-  <h2 style="font-size: 1.2rem;">Презентации на GitHub + бот</h2>
+<div class="mb-3">
+  <h2 style="font-size: 1.15rem;">Презентации на GitHub + бот</h2>
   <p class="small">Слайды = markdown в репозитории. «Добавь график» → бот коммитит → слайд обновлён.</p>
   <p class="xs opacity-40">Эта презентация именно так и сделана.</p>
 </div>
 </v-click>
 
 <v-click>
-<div class="mb-4">
-  <h2 style="font-size: 1.2rem;">Код, доки, отчёты</h2>
+<div class="mb-3">
+  <h2 style="font-size: 1.15rem;">Код, доки, отчёты</h2>
   <p class="small">ИИ — черновик, человек — редактор. <span class="green">Экономия 60–80% времени.</span></p>
 </div>
 </v-click>
 
 <v-click>
 <div>
-  <h2 style="font-size: 1.2rem;">Единая точка входа</h2>
+  <h2 style="font-size: 1.15rem;">Единая точка входа</h2>
   <p class="small">Почта, календарь, задачи, вики, диск — через один чат с агентом.</p>
 </div>
 </v-click>
 
 ::right::
 
-<div class="pl-4 pt-16">
+<div class="pl-4 pt-12">
 
 <v-click>
 <div class="p-4 rounded" style="background: #1E293B;">
@@ -180,20 +226,20 @@ layout: two-cols
 layout: default
 ---
 
-<div class="page-num">5</div>
+<div class="page-num">6</div>
 
 # MCP: почему их стало так много
 
-<div class="pt-2">
+<div class="pt-1">
 
-<div class="mb-4">
-  <h2 style="font-size: 1.3rem;">MCP = Model Context Protocol</h2>
+<div class="mb-3">
+  <h2 style="font-size: 1.2rem;">MCP = Model Context Protocol</h2>
   <p class="amber">Открытый стандарт (Anthropic). Как USB для ИИ: один разъём — любое устройство.</p>
 </div>
 
 <v-click>
-<div class="mb-4">
-  <h2 style="font-size: 1.2rem;">Почему взрывной рост</h2>
+<div class="mb-3">
+  <h2 style="font-size: 1.15rem;">Почему взрывной рост</h2>
   <ul class="small">
     <li>Любой продукт → MCP-сервер за <strong>1 день</strong></li>
     <li>Одна интеграция = доступ из любого агента</li>
@@ -204,7 +250,7 @@ layout: default
 
 <v-click>
 <div class="p-3 rounded-lg" style="background: #0F2B1A;">
-  <h2 style="font-size: 1.2rem;" class="green mb-2">У нас в РАЗУМ уже подключено:</h2>
+  <h2 style="font-size: 1.15rem;" class="green mb-2">У нас в РАЗУМ уже подключено:</h2>
   <div class="grid grid-cols-3 gap-1 small">
     <span>Яндекс.Почта</span><span>Яндекс.Календарь</span><span>Яндекс.Диск</span>
     <span>Яндекс.Вики</span><span>Яндекс.Телемост</span><span>Kaiten</span>
@@ -220,7 +266,7 @@ layout: default
 layout: two-cols
 ---
 
-<div class="page-num">6</div>
+<div class="page-num">7</div>
 
 # Чат-боты vs Агенты
 
@@ -267,32 +313,79 @@ layout: two-cols
 
 </div>
 
-
----
-layout: default
----
-
-<div class="page-num">7</div>
-
-# 6 уровней агентной архитектуры
-
-<div style="text-align:center; padding-top: 8px;">
-  <img src="/architecture-layers.png" style="max-width: 85%; max-height: 65vh;" alt="6 уровней агентной архитектуры">
-</div>
-
 ---
 layout: default
 ---
 
 <div class="page-num">8</div>
 
+# 4 топологии управления агентами
+
+<div class="grid grid-cols-2 gap-3 pt-3">
+
+<v-click>
+<div class="p-2 rounded" style="background: #1E293B;">
+  <h3 style="font-size: 1rem;">1. Жёсткое управление</h3>
+  <p class="small">Manager → Tools. Один агент вызывает специалистов как инструменты.</p>
+  <p class="xs"><span class="green">✅ Связная работа</span> &nbsp; <span class="red">❌ Бутылочное горлышко</span></p>
+</div>
+</v-click>
+
+<v-click>
+<div class="p-2 rounded" style="background: #1E293B;">
+  <h3 style="font-size: 1rem;">2. Локальная автономия</h3>
+  <p class="small">Чат агентов. Равноправные, передают управление.</p>
+  <p class="xs"><span class="green">✅ Разбор в диалоге</span> &nbsp; <span class="red">❌ Нет единого источника истины</span></p>
+</div>
+</v-click>
+
+<v-click>
+<div class="p-2 rounded" style="background: #1E293B;">
+  <h3 style="font-size: 1rem;">3. Явное состояние</h3>
+  <p class="small">Граф состояний. Plan → Act → Verify, с сохраняемым состоянием.</p>
+  <p class="xs"><span class="green">✅ Один сложный запуск</span> &nbsp; <span class="red">❌ Граф ≠ общий бэклог</span></p>
+</div>
+</v-click>
+
+<v-click>
+<div class="p-2 rounded" style="background: #1E293B;">
+  <h3 style="font-size: 1rem;">4. Масштаб парка <span class="badge-green" style="font-size: 0.6rem;">production</span></h3>
+  <p class="small">Реестр задач. Исполнители берут и возвращают доказательства.</p>
+  <p class="xs"><span class="green">✅ Множество асинхронных работ</span> &nbsp; <span class="red">❌ Сложность эксплуатации</span></p>
+</div>
+</v-click>
+
+</div>
+
+<div class="pt-3 text-center xs opacity-40">Источник: Automatica · «Операционные системы для 1,000 ИИ-агентов»</div>
+
+---
+layout: default
+---
+
+<div class="page-num">9</div>
+
+# 6 уровней агентной архитектуры
+
+<div class="media-box" style="height: 62vh; padding-top: 4px;">
+  <img src="/architecture-layers.png" alt="6 уровней агентной архитектуры">
+</div>
+
+<div class="pt-1 text-xs opacity-40 text-center">Фреймворк решает задачи одного уровня — и не помогает на следующем. Выбирайте под уровень.</div>
+
+---
+layout: default
+---
+
+<div class="page-num">10</div>
+
 # Как встроить ИИ в процесс
 
-<div class="pt-3">
+<div class="pt-2">
 
 ## <span class="amber">Три столпа</span> (по Automatica)
 
-<div class="grid grid-cols-3 gap-4 pt-3">
+<div class="grid grid-cols-3 gap-3 pt-3">
 
 <v-click>
 <div class="text-center p-3 rounded" style="background: #1E293B;">
@@ -333,7 +426,7 @@ layout: default
 layout: default
 ---
 
-<div class="page-num">9</div>
+<div class="page-num">11</div>
 
 # Контракт задачи
 
@@ -390,20 +483,19 @@ layout: default
 layout: default
 ---
 
-<div class="page-num">10</div>
+<div class="page-num">12</div>
 
 # За чем следить: ИИ ошибается — и дорого
 
-<div style="text-align:center; padding-top: 4px;">
-  <img src="/photo_2026-09-08_19-55-20.jpg" style="max-width: 60%; max-height: 50vh;">
-  <img src="/photo_2026-09-08_19-55-20_1.jpg" style="max-width: 60%; max-height: 50vh;">
+<div class="media-box" style="height: 35vh;">
+  <img src="/vim-400.png" alt="$397 на выход из Vim">
 </div>
 
-<div class="grid grid-cols-2 gap-3 pt-2">
+<div class="grid grid-cols-2 gap-2 pt-2">
 
 <v-click>
 <div class="p-2 rounded" style="background: #2D1B1B;">
-  <p class="small"><span class="red">📎 «Я удалил лишнее»</span> — агент решил «оптимизировать» код и удалил продакшен-базу. Done.</p>
+  <p class="small"><span class="red">📎 «Я удалил лишнее»</span> — агент «оптимизировал» код и удалил продакшен-базу. Done.</p>
 </div>
 </v-click>
 
@@ -427,7 +519,7 @@ layout: default
 
 </div>
 
-<div class="pt-2 text-center"><span class="amber" style="font-weight: 600;">Модели ошибаются. Архитектура — то, что держит систему.</span></div>
+<div class="pt-1 text-center"><span class="amber" style="font-weight: 600;">Модели ошибаются. Архитектура — то, что держит систему.</span></div>
 
 ---
 layout: default
@@ -437,15 +529,15 @@ layout: default
 
 # Победы vs Провалы
 
-<div style="text-align:center; padding-top: 4px;">
-  <img src="/wins-vs-fails.png" style="max-width: 90%; max-height: 65vh;" alt="AI wins vs fails comparison">
+<div class="media-box" style="height: 68vh; padding-top: 2px;">
+  <img src="/wins-vs-fails.png" alt="AI wins vs fails comparison">
 </div>
 
 ---
 layout: default
 ---
 
-<div class="page-num">11</div>
+<div class="page-num">14</div>
 
 # Провалы: таксономия MAST
 
@@ -493,11 +585,24 @@ layout: default
 
 <v-click>
 <div class="pt-4 text-center">
-  <h3 class="amber mb-1" style="font-size: 1.1rem;">Системные меры</h3>
+  <h3 class="amber mb-1" style="font-size: 1rem;">Системные меры</h3>
   <p class="small">Пакеты задач + состояние + временные права + независимая проверка + лимит повторов</p>
 </div>
 </v-click>
 
+---
+layout: default
+---
+
+<div class="page-num">15</div>
+
+# Цикл агента
+
+<div class="media-box" style="height: 60vh; padding-top: 4px;">
+  <img src="/agent-loop.png" alt="Agent Loop: Observe → Reason → Act → Verify">
+</div>
+
+<div class="pt-2 text-center small opacity-50">Каждый цикл: наблюдает среду → рассуждает → действует через инструменты → проверяет результат</div>
 
 ---
 layout: default
@@ -505,134 +610,48 @@ layout: default
 
 <div class="page-num">16</div>
 
-# Личный опыт: успехи
-
-<div class="grid grid-cols-2 gap-5 pt-3">
-
-<div>
-<v-click>
-<div class="p-3 rounded" style="background: #0F2B1A;">
-  <h3 class="green mb-2" style="font-size: 1.1rem;">[ВАША ИСТОРИЯ 1]</h3>
-  <p class="small opacity-50">Что автоматизировали, результат, цифры.</p>
-  <div class="mt-2 pt-2" style="border-top: 1px solid #065F46;">
-    <p class="xs opacity-50">Примеры: авто-планёрки, дайджест почты, задачи через агента вместо Kaiten, подготовка к встречам.</p>
-  </div>
-</div>
-</v-click>
-</div>
-
-<div>
-<v-click>
-<div class="p-3 rounded" style="background: #0F2B1A;">
-  <h3 class="green mb-2" style="font-size: 1.1rem;">[ВАША ИСТОРИЯ 2]</h3>
-  <p class="small opacity-50">Второй успешный кейс.</p>
-  <div class="mt-2 pt-2" style="border-top: 1px solid #065F46;">
-    <p class="xs opacity-50" style="font-weight: 600;">Уже в РАЗУМ:</p>
-    <ul class="xs opacity-50 space-y-0.5 mt-1">
-      <li>Агент планирует день — почта, календарь, Kaiten, ELMA</li>
-      <li>Единый интерфейс ко всем корп. системам</li>
-      <li>Автоматизация рутины: поиск, сводки, материалы</li>
-    </ul>
-  </div>
-</div>
-</v-click>
-</div>
-
-</div>
-
-<div class="pt-3 text-center xs opacity-40">⚠️ Заполните реальными кейсами — без них формат не складывается.</div>
-
----
-layout: default
----
-
-<div class="page-num">17</div>
-
-# Личный опыт: провалы и уроки
-
-<div class="grid grid-cols-2 gap-5 pt-3">
-
-<div>
-<v-click>
-<div class="p-3 rounded" style="background: #2D1B1B;">
-  <h3 class="red mb-2" style="font-size: 1.1rem;">[ВАШ ПРОВАЛ 1]</h3>
-  <p class="small opacity-50">Что пошло не так, почему, урок.</p>
-</div>
-</v-click>
-<v-click>
-<div class="p-3 rounded mt-3" style="background: #2D1B1B;">
-  <h3 class="red mb-2" style="font-size: 1.1rem;">[ВАШ ПРОВАЛ 2]</h3>
-  <p class="small opacity-50">Что сломалось и как починили.</p>
-</div>
-</v-click>
-</div>
-
-<div>
-<v-click>
-<div class="p-3 rounded" style="background: #1E293B;">
-  <h3 class="amber mb-2" style="font-size: 1.1rem;">Универсальные уроки</h3>
-  <ul class="small space-y-1.5">
-    <li>Не верьте статусам без проверки — 70%+ «ПРОСРОЧЕНО» в Kaiten ложные</li>
-    <li>Один промпт ≠ production. Нужен контракт с критериями.</li>
-    <li>Без бюджета и лимита попыток = бесконечный цикл за ваши деньги</li>
-    <li>Оркестрация сдерживает ошибки в 4× лучше, чем без неё</li>
-  </ul>
-</div>
-</v-click>
-</div>
-
-</div>
-
-<div class="pt-3 text-center xs opacity-40">⚠️ Заполните реальными кейсами.</div>
-
----
-layout: default
----
-
-<div class="page-num">18</div>
-
 # Главные принципы
 
-<div class="pt-5 space-y-3">
+<div class="pt-4 space-y-2">
 
 <v-click>
 <div class="flex items-start gap-2 p-2.5 rounded" style="background: #1E293B;">
-  <span class="amber" style="font-size: 1.1rem;">▸</span>
+  <span class="amber" style="font-size: 1rem;">▸</span>
   <p class="small">Состояние задач и правила — в одном месте. Рассуждать и выполнять — где угодно.</p>
 </div>
 </v-click>
 
 <v-click>
 <div class="flex items-start gap-2 p-2.5 rounded" style="background: #1E293B;">
-  <span class="green" style="font-size: 1.1rem;">▸</span>
+  <span class="green" style="font-size: 1rem;">▸</span>
   <p class="small">Done выносит тот, кто не делал работу.</p>
 </div>
 </v-click>
 
 <v-click>
 <div class="flex items-start gap-2 p-2.5 rounded" style="background: #1E293B;">
-  <span class="amber" style="font-size: 1.1rem;">▸</span>
+  <span class="amber" style="font-size: 1rem;">▸</span>
   <p class="small">Больше агентов ≠ лучше. Смысл есть, если работу можно разделить.</p>
 </div>
 </v-click>
 
 <v-click>
 <div class="flex items-start gap-2 p-2.5 rounded" style="background: #1E293B;">
-  <span class="green" style="font-size: 1.1rem;">▸</span>
+  <span class="green" style="font-size: 1rem;">▸</span>
   <p class="small">Не история чата, а контракт задачи — интерфейс с системой.</p>
 </div>
 </v-click>
 
 <v-click>
 <div class="flex items-start gap-2 p-2.5 rounded" style="background: #1E293B;">
-  <span class="amber" style="font-size: 1.1rem;">▸</span>
+  <span class="amber" style="font-size: 1rem;">▸</span>
   <p class="small">Человек управляет целями и правилами. Агент — исполняет.</p>
 </div>
 </v-click>
 
 <v-click>
 <div class="flex items-start gap-2 p-2.5 rounded" style="background: #1E293B;">
-  <span class="green" style="font-size: 1.1rem;">▸</span>
+  <span class="green" style="font-size: 1rem;">▸</span>
   <p class="small">Модели ошибаются. Архитектура — то, что держит систему.</p>
 </div>
 </v-click>
@@ -643,11 +662,11 @@ layout: default
 layout: default
 ---
 
-<div class="page-num">19</div>
+<div class="page-num">17</div>
 
 # Что дальше? Прогноз на год
 
-<div class="grid grid-cols-2 gap-5 pt-4">
+<div class="grid grid-cols-2 gap-4 pt-3">
 
 <v-click>
 <div class="p-3 rounded" style="background: #1E293B;">
@@ -685,11 +704,11 @@ layout: center
 class: text-center
 ---
 
-<div class="page-num">20</div>
+<div class="page-num">18</div>
 
 # Итоги
 
-<div class="pt-6 space-y-2">
+<div class="pt-5 space-y-2">
 
 <v-click>
 <p class="small">Модели за год: от «ответа на вопрос» до <span class="amber">автономного решения задач</span></p>
@@ -713,7 +732,7 @@ class: text-center
 
 </div>
 
-<div class="pt-10">
+<div class="pt-8">
   <v-click><span style="font-size: 2.5rem; font-weight: 700; color: #F8FAFC;">Вопросы?</span></v-click>
 </div>
 
@@ -721,7 +740,7 @@ class: text-center
 layout: end
 ---
 
-<div class="page-num">21</div>
+<div class="page-num">19</div>
 
 <div class="text-center">
   <div style="font-size: 1.5rem; font-weight: 700; color: #F59E0B;">Спасибо!</div>
