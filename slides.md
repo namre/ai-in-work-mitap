@@ -87,7 +87,7 @@ layout: default
 # Прогресс за год: тогда и сейчас
 
 <div style="text-align:center; padding-top: 8px;">
-  <img src="./then-vs-now.png" style="max-width: 90%; max-height: 65vh;" alt="Then vs Now: Will Smith spaghetti AI vs Sora/Veo 3">
+  <img src="/then-vs-now.png" style="max-width: 90%; max-height: 65vh;" alt="Then vs Now: Will Smith spaghetti AI vs Sora/Veo 3">
 </div>
 
 <div class="text-center pt-1"><span class="amber" style="font-size: 1.1rem; font-weight: 600;">От «не могу» к «сделал, проверяй» — за 12 месяцев.</span></div>
@@ -365,7 +365,7 @@ layout: default
 # 6 уровней агентной архитектуры
 
 <div style="text-align:center; padding-top: 8px;">
-  <img src="./architecture-layers.png" style="max-width: 85%; max-height: 65vh;" alt="6 уровней агентной архитектуры">
+  <img src="/architecture-layers.png" style="max-width: 85%; max-height: 65vh;" alt="6 уровней агентной архитектуры">
 </div>
 
 <div class="pt-2 text-xs opacity-40 text-center">Фреймворк решает задачи одного уровня — и не помогает на следующем. Выбирайте под уровень.</div>
@@ -485,7 +485,7 @@ layout: default
 # За чем следить: ИИ ошибается — и дорого
 
 <div style="text-align:center; padding-top: 4px;">
-  <img src="./vim-400.png" style="max-width: 60%; max-height: 50vh;" alt="$397 на выход из Vim">
+  <img src="/vim-400.png" style="max-width: 60%; max-height: 50vh;" alt="$397 на выход из Vim">
 </div>
 
 <div class="grid grid-cols-2 gap-3 pt-2">
@@ -527,7 +527,7 @@ layout: default
 # Победы vs Провалы
 
 <div style="text-align:center; padding-top: 4px;">
-  <img src="./wins-vs-fails.png" style="max-width: 90%; max-height: 65vh;" alt="AI wins vs fails comparison">
+  <img src="/wins-vs-fails.png" style="max-width: 90%; max-height: 65vh;" alt="AI wins vs fails comparison">
 </div>
 
 ---
@@ -596,7 +596,7 @@ layout: default
 # Цикл агента
 
 <div style="text-align:center; padding-top: 4px;">
-  <img src="./agent-loop.png" style="max-width: 70%; max-height: 60vh;" alt="Agent Loop: Observe → Reason → Act → Verify">
+  <img src="/agent-loop.png" style="max-width: 70%; max-height: 60vh;" alt="Agent Loop: Observe → Reason → Act → Verify">
 </div>
 
 <div class="pt-2 text-center small opacity-50">Каждый цикл: наблюдает среду → рассуждает → действует через инструменты → проверяет результат</div>
