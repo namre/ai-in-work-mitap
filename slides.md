@@ -82,12 +82,8 @@ layout: cover
 layout: default
 ---
 
-<div class="page-num">2</div>
-
-# Прогресс за год: тогда и сейчас
-
 <div style="text-align:center; padding-top: 8px;">
-  <video src="/CMAF_480.mp4" controls style="max-width: 80%; max-height: 60vh;"></video>
+  <video src="/CMAF_480.mp4" controls></video>
 </div>
 
 <div class="text-center pt-1"><span class="amber" style="font-size: 1.1rem; font-weight: 600;">От «не могу» к «сделал, проверяй» — за 12 месяцев.</span></div>
