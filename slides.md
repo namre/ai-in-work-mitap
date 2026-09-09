@@ -487,8 +487,9 @@ layout: default
 
 # За чем следить: ИИ ошибается — и дорого
 
-<div class="media-box" style="height: 35vh;">
-  <img src="/vim-400.png" alt="$397 на выход из Vim">
+<div class="media-box" style="height: 42vh; gap: 12px;">
+  <img src="/photo_2026-09-08_19-55-20.jpg" alt="Пример ошибки ИИ 1" style="border-radius: 8px;">
+  <img src="/photo_2026-09-08_19-55-20_1.jpg" alt="Пример ошибки ИИ 2" style="border-radius: 8px;">
 </div>
 
 <div class="grid grid-cols-2 gap-2 pt-2">
