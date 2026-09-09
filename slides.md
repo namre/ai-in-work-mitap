@@ -49,6 +49,7 @@ routerMode: hash
 }
 .slidev-layout li strong { color: #F0F6FF; }
 .slidev-layout code { background: #1E293B; color: #7DD3FC; font-size: 0.85em; }
+.slidev-layout img { border-radius: 8px; max-height: 420px; }
 .green { color: #34D399; }
 .red { color: #F87171; }
 .amber { color: #FBBF24; }
@@ -85,39 +86,11 @@ layout: default
 
 # Прогресс за год: тогда и сейчас
 
-<div class="grid grid-cols-2 gap-5 pt-4">
-
-<div>
-  <div class="badge-red mb-2">Год назад</div>
-
-  <div class="p-3 rounded" style="background: #2D1B1B;">
-    <p class="small">🎬 Will Smith ест лапшу — AI-видео за гранью физики, 6 пальцев, лица плывут</p>
-  </div>
-  <div class="p-3 rounded mt-2" style="background: #2D1B1B;">
-    <p class="small">🤖 Агент: «Я проанализировал и подготовил ответ» — на деле выдал 3 абзаца текста</p>
-  </div>
-  <div class="p-3 rounded mt-2" style="background: #2D1B1B;">
-    <p class="small">🧮 Задача тысячелетия? «Не могу, это сложный вопрос»</p>
-  </div>
+<div style="text-align:center; padding-top: 8px;">
+  <img src="/then-vs-now.png" style="max-width: 90%; max-height: 65vh;" alt="Then vs Now: Will Smith spaghetti AI vs Sora/Veo 3">
 </div>
 
-<div>
-  <div class="badge-green mb-2">Сейчас</div>
-
-  <div class="p-3 rounded" style="background: #0F2B1A;">
-    <p class="small">🎬 Sora / Veo 3 — фотореалистичное видео по тексту. Не отличить от съёмки.</p>
-  </div>
-  <div class="p-3 rounded mt-2" style="background: #0F2B1A;">
-    <p class="small">🤖 Агент сам клонирует репо, пишет код, коммитит, открывает PR — и прикладывает видео демо</p>
-  </div>
-  <div class="p-3 rounded mt-2" style="background: #0F2B1A;">
-    <p class="small">🧮 OpenAI o3 решил 25% задач с Frontiers of Math — уровня PhD. Год назад было 2%.</p>
-  </div>
-</div>
-
-</div>
-
-<div class="pt-4 text-center"><span class="amber" style="font-size: 1.1rem; font-weight: 600;">От «не могу» к «сделал, проверяй» — за 12 месяцев.</span></div>
+<div class="text-center pt-1"><span class="amber" style="font-size: 1.1rem; font-weight: 600;">От «не могу» к «сделал, проверяй» — за 12 месяцев.</span></div>
 
 ---
 layout: default
@@ -391,45 +364,11 @@ layout: default
 
 # 6 уровней агентной архитектуры
 
-<div class="pt-1">
-
-<div class="space-y-1">
-
-<div class="flex items-center gap-2 p-1.5 rounded" style="background: #1E293B;">
-  <span style="font-size: 1.2rem;">🏢</span>
-  <div class="small"><strong>1. Рабочая ОС</strong> <span class="opacity-50">— Портфель результатов, SLA, очереди исключений</span></div>
+<div style="text-align:center; padding-top: 8px;">
+  <img src="/architecture-layers.png" style="max-width: 85%; max-height: 65vh;" alt="6 уровней агентной архитектуры">
 </div>
 
-<div class="flex items-center gap-2 p-1.5 rounded" style="background: #1E293B;">
-  <span style="font-size: 1.2rem;">🎛️</span>
-  <div class="small"><strong>2. Контур управления</strong> <span class="opacity-50">— Состояние задач, политики, бюджеты, аудит</span></div>
-</div>
-
-<div class="flex items-center gap-2 p-1.5 rounded" style="background: #1E293B;">
-  <span style="font-size: 1.2rem;">⚙️</span>
-  <div class="small"><strong>3. Оркестратор</strong> <span class="opacity-50">— Зависимости, маршрутизация, повторы, нагрузка</span></div>
-</div>
-
-<div class="flex items-center gap-2 p-1.5 rounded" style="background: #1E293B;">
-  <span style="font-size: 1.2rem;">📦</span>
-  <div class="small"><strong>4. Среда агента</strong> <span class="opacity-50">— Контекст, инструменты, песочница. Codex / Claude Code</span></div>
-</div>
-
-<div class="flex items-center gap-2 p-1.5 rounded" style="background: #1E293B;">
-  <span style="font-size: 1.2rem;">🔄</span>
-  <div class="small"><strong>5. Цикл агента</strong> <span class="opacity-50">— Наблюдать → Рассуждать → Действовать → Оценивать</span></div>
-</div>
-
-<div class="flex items-center gap-2 p-1.5 rounded" style="background: #1E293B;">
-  <span style="font-size: 1.2rem;">🧠</span>
-  <div class="small"><strong>6. Модель</strong> <span class="opacity-50">— Инференс, выбор инструментов, GPT / Claude / Gemini</span></div>
-</div>
-
-</div>
-
-</div>
-
-<div class="pt-3 text-xs opacity-40 text-center">Фреймворк решает задачи одного уровня — и не помогает на следующем. Выбирайте под уровень.</div>
+<div class="pt-2 text-xs opacity-40 text-center">Фреймворк решает задачи одного уровня — и не помогает на следующем. Выбирайте под уровень.</div>
 
 ---
 layout: default
@@ -545,49 +484,57 @@ layout: default
 
 # За чем следить: ИИ ошибается — и дорого
 
-<div class="grid grid-cols-2 gap-4 pt-4">
+<div style="text-align:center; padding-top: 4px;">
+  <img src="/vim-400.png" style="max-width: 60%; max-height: 50vh;" alt="$397 на выход из Vim">
+</div>
+
+<div class="grid grid-cols-2 gap-3 pt-2">
 
 <v-click>
-<div class="p-3 rounded" style="background: #2D1B1B;">
-  <h3 class="red" style="font-size: 1rem;">💸 $400 на выход из Vim</h3>
-  <p class="small opacity-80">Агент потратил $400 токенов, пытаясь закрыть Vim. В бесконечном цикле.</p>
-  <p class="xs opacity-40">Без бюджета и лимита попыток агент = дыра в кошельке.</p>
+<div class="p-2 rounded" style="background: #2D1B1B;">
+  <p class="small"><span class="red">📎 «Я удалил лишнее»</span> — агент решил «оптимизировать» код и удалил продакшен-базу. Done.</p>
 </div>
 </v-click>
 
 <v-click>
-<div class="p-3 rounded" style="background: #2D1B1B;">
-  <h3 class="red" style="font-size: 1rem;">📎 «Я удалил лишнее»</h3>
-  <p class="small opacity-80">Агент решил «оптимизировать» код — удалил продакшен-базу. Done.</p>
-  <p class="xs opacity-40">Без явного контракта и песочницы агент сам решает, что «лишнее».</p>
+<div class="p-2 rounded" style="background: #2D1B1B;">
+  <p class="small"><span class="red">🔄 47 итераций «рефакторинга»</span> — версия 47 = версия 1 с другим именем переменной.</p>
 </div>
 </v-click>
 
 <v-click>
-<div class="p-3 rounded" style="background: #2D1B1B;">
-  <h3 class="red" style="font-size: 1rem;">🔄 47 итераций «рефакторинга»</h3>
-  <p class="small opacity-80">Агент переписывал функцию 47 раз. Версия 47 = версия 1 с другим именем переменной.</p>
-  <p class="xs opacity-40">Без проверки результата агент будет «улучшать» бесконечно.</p>
+<div class="p-2 rounded" style="background: #2D1B1B;">
+  <p class="small"><span class="red">🎭 Убедительная ложь</span> — «Я проверил — всё работает». Тесты не проходят, сервер не запускается.</p>
 </div>
 </v-click>
 
 <v-click>
-<div class="p-3 rounded" style="background: #2D1B1B;">
-  <h3 class="red" style="font-size: 1rem;">🎭 Убедительная ложь</h3>
-  <p class="small opacity-80">«Я проверил — всё работает». Тесты не проходят, сервер не запускается.</p>
-  <p class="xs opacity-40">Done выставляет тот, кто не делал работу. Всегда.</p>
+<div class="p-2 rounded" style="background: #2D1B1B;">
+  <p class="small"><span class="red">💸 Без бюджета = без тормозов</span> — агент без лимита попыток = дыра в кошельке.</p>
 </div>
 </v-click>
 
 </div>
 
-<div class="pt-3 text-center"><span class="amber" style="font-weight: 600;">Модели ошибаются. Архитектура — то, что держит систему.</span></div>
+<div class="pt-2 text-center"><span class="amber" style="font-weight: 600;">Модели ошибаются. Архитектура — то, что держит систему.</span></div>
 
 ---
 layout: default
 ---
 
 <div class="page-num">13</div>
+
+# Победы vs Провалы
+
+<div style="text-align:center; padding-top: 4px;">
+  <img src="/wins-vs-fails.png" style="max-width: 90%; max-height: 65vh;" alt="AI wins vs fails comparison">
+</div>
+
+---
+layout: default
+---
+
+<div class="page-num">14</div>
 
 # Провалы: таксономия MAST
 
@@ -644,7 +591,21 @@ layout: default
 layout: default
 ---
 
-<div class="page-num">14</div>
+<div class="page-num">15</div>
+
+# Цикл агента
+
+<div style="text-align:center; padding-top: 4px;">
+  <img src="/agent-loop.png" style="max-width: 70%; max-height: 60vh;" alt="Agent Loop: Observe → Reason → Act → Verify">
+</div>
+
+<div class="pt-2 text-center small opacity-50">Каждый цикл: наблюдает среду → рассуждает → действует через инструменты → проверяет результат</div>
+
+---
+layout: default
+---
+
+<div class="page-num">16</div>
 
 # Личный опыт: успехи
 
@@ -687,7 +648,7 @@ layout: default
 layout: default
 ---
 
-<div class="page-num">15</div>
+<div class="page-num">17</div>
 
 # Личный опыт: провалы и уроки
 
@@ -730,7 +691,7 @@ layout: default
 layout: default
 ---
 
-<div class="page-num">16</div>
+<div class="page-num">18</div>
 
 # Главные принципы
 
@@ -784,7 +745,7 @@ layout: default
 layout: default
 ---
 
-<div class="page-num">17</div>
+<div class="page-num">19</div>
 
 # Что дальше? Прогноз на год
 
@@ -826,7 +787,7 @@ layout: center
 class: text-center
 ---
 
-<div class="page-num">18</div>
+<div class="page-num">20</div>
 
 # Итоги
 
@@ -862,7 +823,7 @@ class: text-center
 layout: end
 ---
 
-<div class="page-num">19</div>
+<div class="page-num">21</div>
 
 <div class="text-center">
   <div style="font-size: 1.5rem; font-weight: 700; color: #F59E0B;">Спасибо!</div>
