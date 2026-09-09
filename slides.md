@@ -61,9 +61,25 @@ routerMode: hash
 .badge-red { background: #7F1D1D; color: #FCA5A5; padding: 2px 10px; border-radius: 6px; font-size: 0.8rem; }
 .badge-amber { background: #78350F; color: #FCD34D; padding: 2px 10px; border-radius: 6px; font-size: 0.8rem; }
 .page-num { position: absolute; bottom: 10px; right: 20px; font-size: 0.7rem; color: #475569; }
-/* Image/video containers */
-.media-box { display: flex; align-items: center; justify-content: center; overflow: hidden; }
-.media-box img, .media-box video { max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 8px; }
+/* Image/video containers - fill available space, auto-scale content */
+.media-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  min-height: 0;
+}
+.media-box img, .media-box video {
+  max-width: 100%;
+  max-height: 68vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+.media-box.tall img, .media-box.tall video { max-height: 62vh; }
+.media-box.short img, .media-box.short video { max-height: 40vh; }
+.media-box.wide img, .media-box.wide video { max-width: 95%; max-height: 68vh; }
 </style>
 
 ---
@@ -89,7 +105,7 @@ layout: default
 
 # Прогресс за год: тогда и сейчас
 
-<div class="media-box" style="height: 62vh; padding-top: 4px;">
+<div class="media-box tall" style="padding-top: 4px;">
   <video src="/CMAF_480.mp4" controls></video>
 </div>
 
@@ -367,7 +383,7 @@ layout: default
 
 # 6 уровней агентной архитектуры
 
-<div class="media-box" style="height: 62vh; padding-top: 4px;">
+<div class="media-box tall" style="padding-top: 4px;">
   <img src="/architecture-layers.png" alt="6 уровней агентной архитектуры">
 </div>
 
@@ -487,7 +503,7 @@ layout: default
 
 # За чем следить: ИИ ошибается — и дорого
 
-<div class="media-box" style="height: 42vh; gap: 12px;">
+<div class="media-box short" style="gap: 12px;">
   <img src="/photo_2026-09-08_19-55-20.jpg" alt="Пример ошибки ИИ 1" style="border-radius: 8px;">
   <img src="/photo_2026-09-08_19-55-20_1.jpg" alt="Пример ошибки ИИ 2" style="border-radius: 8px;">
 </div>
@@ -530,7 +546,7 @@ layout: default
 
 # Победы vs Провалы
 
-<div class="media-box" style="height: 68vh; padding-top: 2px;">
+<div class="media-box wide" style="padding-top: 2px;">
   <img src="/wins-vs-fails.png" alt="AI wins vs fails comparison">
 </div>
 
@@ -599,7 +615,7 @@ layout: default
 
 # Цикл агента
 
-<div class="media-box" style="height: 60vh; padding-top: 4px;">
+<div class="media-box tall" style="padding-top: 4px;">
   <img src="/agent-loop.png" alt="Agent Loop: Observe → Reason → Act → Verify">
 </div>
 
