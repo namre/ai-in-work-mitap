@@ -32,8 +32,6 @@ jobs:
 
       - run: npx slidev build slides.md --out dist --base /ai-in-work-mitap/
 
-      - run: cp public/*.png dist/ 2>/dev/null || true
-
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
