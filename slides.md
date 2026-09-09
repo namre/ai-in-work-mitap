@@ -137,49 +137,10 @@ layout: default
 </div>
 
 ---
-layout: default
----
-
-<div class="page-num">4</div>
-
-# Исследования: что говорят цифры
-
-<div class="grid grid-cols-2 gap-4 pt-2">
-
-<div>
-  <div class="badge-green mb-1">Параллельные задачи</div>
-  <div class="green" style="font-size: 1.8rem; font-weight: 700;">+80.9%</div>
-  <div class="small opacity-50 mb-3">против одного агента — Google Research, 180 конфигураций</div>
-
-  <div class="badge-red mb-1">Последовательное планирование</div>
-  <div class="red" style="font-size: 1.8rem; font-weight: 700;">−39…−70%</div>
-  <div class="small opacity-50 mb-3">PlanCraft: агенты проигрывают одиночке на зависимых шагах</div>
-</div>
-
-<div>
-  <div class="badge-red mb-1">Рост ошибок</div>
-  <div class="red" style="font-size: 1.8rem; font-weight: 700;">до 17.2×</div>
-  <div class="small opacity-50 mb-2">У независимых агентов</div>
-  <div class="green" style="font-size: 1.3rem; font-weight: 600;">→ 4.4×</div>
-  <div class="small opacity-50 mb-3">С централизованной оркестрацией</div>
-
-  <div class="badge-amber mt-1">Расход токенов: 15× против чата</div>
-  <div class="small opacity-50">но прирост результата +90.2% (Anthropic)</div>
-</div>
-
-</div>
-
-<div class="pt-3 text-center amber" style="font-size: 1.2rem; font-weight: 600;">
-  Больше агентов ≠ лучше. Смысл есть, только если работу можно разделить.
-</div>
-
-<div class="pt-1 text-xs opacity-30 text-center">Источники: Google Research (2026), Anthropic (2025). Разные исследования — не единый бенчмарк.</div>
-
----
 layout: two-cols
 ---
 
-<div class="page-num">5</div>
+<div class="page-num">4</div>
 
 # Как ИИ меняет работу
 
@@ -223,7 +184,7 @@ layout: two-cols
 layout: default
 ---
 
-<div class="page-num">6</div>
+<div class="page-num">5</div>
 
 # MCP: почему их стало так много
 
@@ -263,7 +224,7 @@ layout: default
 layout: two-cols
 ---
 
-<div class="page-num">7</div>
+<div class="page-num">6</div>
 
 # Чат-боты vs Агенты
 
@@ -310,57 +271,12 @@ layout: two-cols
 
 </div>
 
----
-layout: default
----
-
-<div class="page-num">8</div>
-
-# 4 топологии управления агентами
-
-<div class="grid grid-cols-2 gap-3 pt-3">
-
-<v-click>
-<div class="p-2 rounded" style="background: #1E293B;">
-  <h3 style="font-size: 1rem;">1. Жёсткое управление</h3>
-  <p class="small">Manager → Tools. Один агент вызывает специалистов как инструменты.</p>
-  <p class="xs"><span class="green">✅ Связная работа</span> &nbsp; <span class="red">❌ Бутылочное горлышко</span></p>
-</div>
-</v-click>
-
-<v-click>
-<div class="p-2 rounded" style="background: #1E293B;">
-  <h3 style="font-size: 1rem;">2. Локальная автономия</h3>
-  <p class="small">Чат агентов. Равноправные, передают управление.</p>
-  <p class="xs"><span class="green">✅ Разбор в диалоге</span> &nbsp; <span class="red">❌ Нет единого источника истины</span></p>
-</div>
-</v-click>
-
-<v-click>
-<div class="p-2 rounded" style="background: #1E293B;">
-  <h3 style="font-size: 1rem;">3. Явное состояние</h3>
-  <p class="small">Граф состояний. Plan → Act → Verify, с сохраняемым состоянием.</p>
-  <p class="xs"><span class="green">✅ Один сложный запуск</span> &nbsp; <span class="red">❌ Граф ≠ общий бэклог</span></p>
-</div>
-</v-click>
-
-<v-click>
-<div class="p-2 rounded" style="background: #1E293B;">
-  <h3 style="font-size: 1rem;">4. Масштаб парка <span class="badge-green" style="font-size: 0.6rem;">production</span></h3>
-  <p class="small">Реестр задач. Исполнители берут и возвращают доказательства.</p>
-  <p class="xs"><span class="green">✅ Множество асинхронных работ</span> &nbsp; <span class="red">❌ Сложность эксплуатации</span></p>
-</div>
-</v-click>
-
-</div>
-
-<div class="pt-3 text-center xs opacity-40">Источник: Automatica · «Операционные системы для 1,000 ИИ-агентов»</div>
 
 ---
 layout: default
 ---
 
-<div class="page-num">9</div>
+<div class="page-num">7</div>
 
 # 6 уровней агентной архитектуры
 
@@ -368,13 +284,11 @@ layout: default
   <img src="/architecture-layers.png" style="max-width: 85%; max-height: 65vh;" alt="6 уровней агентной архитектуры">
 </div>
 
-<div class="pt-2 text-xs opacity-40 text-center">Фреймворк решает задачи одного уровня — и не помогает на следующем. Выбирайте под уровень.</div>
-
 ---
 layout: default
 ---
 
-<div class="page-num">10</div>
+<div class="page-num">8</div>
 
 # Как встроить ИИ в процесс
 
@@ -423,7 +337,7 @@ layout: default
 layout: default
 ---
 
-<div class="page-num">11</div>
+<div class="page-num">9</div>
 
 # Контракт задачи
 
@@ -480,12 +394,13 @@ layout: default
 layout: default
 ---
 
-<div class="page-num">12</div>
+<div class="page-num">10</div>
 
 # За чем следить: ИИ ошибается — и дорого
 
 <div style="text-align:center; padding-top: 4px;">
-  <img src="/vim-400.png" style="max-width: 60%; max-height: 50vh;" alt="$397 на выход из Vim">
+  <img src="/photo_2026-09-08_19-55-20.jpg" style="max-width: 60%; max-height: 50vh;">
+  <img src="/photo_2026-09-08_19-55-20_1.jpg" style="max-width: 60%; max-height: 50vh;">
 </div>
 
 <div class="grid grid-cols-2 gap-3 pt-2">
@@ -534,7 +449,7 @@ layout: default
 layout: default
 ---
 
-<div class="page-num">14</div>
+<div class="page-num">11</div>
 
 # Провалы: таксономия MAST
 
@@ -587,19 +502,6 @@ layout: default
 </div>
 </v-click>
 
----
-layout: default
----
-
-<div class="page-num">15</div>
-
-# Цикл агента
-
-<div style="text-align:center; padding-top: 4px;">
-  <img src="/agent-loop.png" style="max-width: 70%; max-height: 60vh;" alt="Agent Loop: Observe → Reason → Act → Verify">
-</div>
-
-<div class="pt-2 text-center small opacity-50">Каждый цикл: наблюдает среду → рассуждает → действует через инструменты → проверяет результат</div>
 
 ---
 layout: default
