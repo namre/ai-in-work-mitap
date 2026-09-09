@@ -291,11 +291,43 @@ layout: default
 
 # 6 уровней агентной архитектуры
 
-<div class="media-box tall" style="padding-top: 4px;">
-  <img src="/architecture-layers.png" alt="6 уровней агентной архитектуры">
+<div class="pt-1">
+
+<div class="space-y-1">
+
+<div class="flex items-center gap-2 p-1.5 rounded" style="background: #1E293B;">
+  <span style="font-size: 1.2rem;">🏢</span>
+  <div class="small"><strong>1. Рабочая ОС</strong> <span class="opacity-50">— Портфель результатов, SLA, очереди исключений</span></div>
 </div>
 
-<div class="pt-1 text-xs opacity-40 text-center">Фреймворк решает задачи одного уровня — и не помогает на следующем. Выбирайте под уровень.</div>
+<div class="flex items-center gap-2 p-1.5 rounded" style="background: #1E293B;">
+  <span style="font-size: 1.2rem;">🎛️</span>
+  <div class="small"><strong>2. Контур управления</strong> <span class="opacity-50">— Состояние задач, политики, бюджеты, аудит</span></div>
+</div>
+
+<div class="flex items-center gap-2 p-1.5 rounded" style="background: #1E293B;">
+  <span style="font-size: 1.2rem;">⚙️</span>
+  <div class="small"><strong>3. Оркестратор</strong> <span class="opacity-50">— Зависимости, маршрутизация, повторы, нагрузка</span></div>
+</div>
+
+<div class="flex items-center gap-2 p-1.5 rounded" style="background: #1E293B;">
+  <span style="font-size: 1.2rem;">📦</span>
+  <div class="small"><strong>4. Среда агента</strong> <span class="opacity-50">— Контекст, инструменты, песочница. Codex / Claude Code</span></div>
+</div>
+
+<div class="flex items-center gap-2 p-1.5 rounded" style="background: #1E293B;">
+  <span style="font-size: 1.2rem;">🔄</span>
+  <div class="small"><strong>5. Цикл агента</strong> <span class="opacity-50">— Наблюдать → Рассуждать → Действовать → Оценивать</span></div>
+</div>
+
+<div class="flex items-center gap-2 p-1.5 rounded" style="background: #1E293B;">
+  <span style="font-size: 1.2rem;">🧠</span>
+  <div class="small"><strong>6. Модель</strong> <span class="opacity-50">— Инференс, выбор инструментов, GPT / Claude / Gemini</span></div>
+</div>
+
+</div>
+
+</div>
 
 ---
 layout: default
@@ -307,7 +339,7 @@ layout: default
 
 <div class="pt-2">
 
-## <span class="amber">Три столпа</span> (по Automatica)
+## <span class="amber">Три столпа</span>
 
 <div class="grid grid-cols-3 gap-3 pt-3">
 
