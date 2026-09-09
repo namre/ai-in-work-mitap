@@ -87,7 +87,7 @@ layout: default
 # Прогресс за год: тогда и сейчас
 
 <div style="text-align:center; padding-top: 8px;">
-  <img src="/then-vs-now.png" style="max-width: 90%; max-height: 65vh;" alt="Then vs Now: Will Smith spaghetti AI vs Sora/Veo 3">
+  <video src="/my-video.mp4" controls style="max-width: 80%; max-height: 60vh;"></video>
 </div>
 
 <div class="text-center pt-1"><span class="amber" style="font-size: 1.1rem; font-weight: 600;">От «не могу» к «сделал, проверяй» — за 12 месяцев.</span></div>
